@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+  /* Style the footer */
+.footer {
+    grid-area: footer;
+    padding: 0;
+    text-align: center;
+    display: grid;
+    grid-template-areas: 
+      "footerTitle footerTitle footerTitle footerTitle"
+      "footer1     footer2     footer3     footer4"
+      "footerFoot  footerFoot  footerFoot  footerFoot";
+    grid-gap: 10px;
+    font-family: 'Comfortaa', cursive;
+    background-color: white;
+    font-size: small;
+}
+
+  .footerTitle {
+    grid-area: footerTitle;
+    background-color: #ede734;
+    padding: 40px;
+    margin: 0;
+  }
+
+  .footer1, 
+  .footer2, 
+  .footer3,
+  .footer4 {
+    background-color: white;
+  }
+
+  .footer1{
+    grid-area: footer1;
+  }
+
+  .footer2{
+    grid-area: footer2;
+  }
+
+  .footer3{
+    grid-area: footer3;
+  }
+
+  .footer4{
+    grid-area: footer4;
+  }
+
+  .footerFood {
+    grid-area: footerFoot;
+    background-color: #363738;
+    color: rgba(255,255,255,.6);
+    padding: 20px;
+  }

@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+h1 {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: medium;
+}
+  
+h2 {
+    font-family: 'Righteous', cursive;
+    font-size: 25px;
+}
+
+h4{
+    background-color: #d9d9d9;
+    border-radius: 2px;
+    padding: 20px;
+  }
+
+p.price {
+  color: #cc0000;
+  font-size: large;
+  font-weight: bolder;
+}
+  
+p.price-2 {
+  font-family: 'Rajdhani', sans-serif;
+  color: #cc0000;
+  font-size: small;
+}
+
+p.available {
+  font-family: 'Rajdhani', sans-serif;
+  color: #2a9500;
+}
+
+label {
+  font-family: 'Rajdhani', sans-serif;
+}
+
+.grid-container a {
+  text-decoration: none;
+}
+
+.grid-container a:visited {
+  color: black;
+}
+
+.grid-container a:hover{
+  text-decoration: underline;
+}

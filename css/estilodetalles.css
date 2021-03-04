@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin:0;
+}
+
+/*GRID-CONTAINER*/
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+      'left left middle middle right right'
+      'other  other  other other other other'
+      'footer footer footer footer footer footer';
+    grid-column-gap: 10px;
+    background-color: #f2f2f2;
+} 
+
+.left {
+  grid-area: left;
+  text-align: center;
+}
+
+.middle{
+  grid-area: middle;
+  text-align: left;
+  border-left: 2px solid white;
+}
+
+.right{
+    grid-area: right;
+    text-align: left;
+    border-left: 2px solid white;
+}
+
+.other {
+  grid-area: other;
+  display: grid;
+  grid-template-areas: 
+    'itemTitle itemTitle itemTitle itemTitle'
+    'item1 item2 item3 item4' ;
+  grid-column-gap: 10px;
+  background-color: #f2f2f2;
+  border-top: 2px solid white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.left,
+.right,
+.middle {
+  padding: 20px;
+  height: auto;
+}
+
+.card {
+  max-width: 300px;
+  margin: auto;
+  text-align: justify;
+  font-family: arial;
+  background-color: white;
+}
+
+.card-detail {
+    max-width: 500px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+}
+
+.itemTitle {
+    grid-area: itemTitle;
+    margin-top: 20px;
+    background-color: #f2f2f2;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.addButton {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #4CAF50;
+  text-align: center;
+  cursor: pointer;
+  font-size: 18px;
+  width: max-content;
+}
+
+.removeButton {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: rgb(195, 11, 11);
+  text-align: center;
+  cursor: pointer;
+  font-size: 18px;
+  width: max-content;
+}
+
+.caracteristicas {
+  padding: 10px;
+  background-color: #f2f2f2;
+}
+
+.middle h1, .right h1 {
+  font-size: xx-large;
+}

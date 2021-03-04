@@ -1,0 +1,82 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin:0;
+  }
+
+/*GRID-CONTAINER*/
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+      'register'
+      'footer';
+    grid-column-gap: 10px;
+    background-color: #f2f2f2;
+} 
+
+.register {
+    grid-area: register;
+    width: 30%;
+    align-self: center;
+    justify-self: center;
+    margin-bottom: 20px;
+}
+
+form {
+    border: 3px solid #f1f1f1;
+    width: 100%;
+}
+
+.container {
+    padding: 16px;
+    background-color: #f1f1f1;
+  }
+  
+  .email, .psw {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  .email:focus, .psw:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  hr {
+    border: 1px solid white;
+    margin-bottom: 25px;
+  }
+  
+  .registerbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+  }
+  
+  .registerbtn:hover {
+    opacity: 1;
+  }
+  
+  .signin {
+    background-color: #f1f1f1;
+    text-align: center;
+  }
+
+  .signin a{
+    text-decoration: underline;
+  }
+
+  .container a {
+    text-decoration: underline;
+  }
